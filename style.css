@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--white: #fafafb;
+	--beige: #dfd4d0;
+	--beige2: #8f8882;
+	--beige3: #c7ac9f;
+	--white2: #f2f0f1;
+	--beige-light: #787570;
+}
+
+body {
+	background: linear-gradient(to bottom, var(--beige3), var(--beige));
+	height: 100vh;
+	font-family: "Prompt", sans-serif;
+}
+
+.container {
+	max-width: 80%;
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+/*profil*/
+
+.profil h1 {
+	color: var(--white);
+}
+
+.profil span {
+	color: var(--white);
+	letter-spacing: 1px;
+}
+
+#date {
+	color: var(--white);
+	padding: 50px 0 5px 0px;
+}
+
+/*AGREGAR TAREA*/
+
+.ajouter-task {
+	background-color: var(--white);
+	border-radius: 15px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	gap: 70px;
+	padding: 10px;
+	margin: 40px 0;
+}
+
+.ajouter-task input {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: none;
+	background-color: var(--white);
+	padding-left: 10px;
+	color: var(--beige-light);
+}
+
+.ajouter-task input:focus {
+	outline: 2px solid var(--beige);
+	font-family: "Prompt", sans-serif;
+}
+
+.ajouter-task input::placeholder {
+	font-size: 1.1rem;
+	color: var(--beige);
+}
+
+.ajouter-task i {
+	font-size: 50px;
+	color: var(--beige);
+}
+.ajouter-task i:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+/*SECCION DE TAREA */
+
+.section-tarea h3 {
+	color: var(--white);
+	margin-bottom: 20px;
+}
+
+.section-tarea li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(to bottom, var(--beige3), var(--white2));
+	border-radius: 15px;
+	padding: 10px;
+	color: var(--white);
+	margin: 5px 0;
+}
+.section-tarea i {
+	font-size: 25px;
+}
+
+.section-tarea > ul p {
+	font-size: 1.2rem;
+}
+
+.section-tarea i:hover {
+	color: var(--beige2);
+	cursor: pointer;
+}
+
+.line-through {
+	text-decoration: line-through;
+	color: var(--beige2);
+}
